@@ -1,0 +1,107 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Sam Khalandovsky | Miscellaneous Projects</title>
+  </head>
+  <body>
+  <header class="sticky-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="nav-name">
+            <a href="index.html">Sam Khalandovsky</a>
+          </div>
+        </div>
+        <nav class="col-md-9">
+          <ul class="nav-menu">
+            <li class="menu-item">
+              <a href="index.html">About me</a>
+            </li>
+            <li class="menu-item">
+              <a href="robotics.html">Robotics Projects</a>
+            </li>
+            <li class="menu-item active">
+              <a href="other.html">Other Projects</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <div class="main">
+  <div class="h2">Miscellaneous Projects</div>
+    <div class="row">
+      <div class="container col-md-6">
+        <!--div class="h2 col-heading">Personal and Class Projects</div-->
+        <div class="panel-group" id="col-personal">
+          <div class="panel panel-default collapsed" data-toggle="collapse" data-parent="#col-personal" data-target="#collapse1">
+            <div class="panel-heading">
+              <h4 class="panel-title project-title">Plasma research at Princeton Plasma Physics Laboratory <div class="project-date">6-8/2012</div>
+              </h4>
+              
+            </div>
+            <div class="panel-body project-summary"><img src="http://1.bp.blogspot.com/-CCOyU7s8LJU/UA26dYHJq0I/AAAAAAAAAqo/DQ8_3SS2hK8/s1600/IMG_20120723_161432.jpg" alt="Argon plasma in vacuum chamber" class="p_thumb" /> Trying to characterize the behavior of dust-filled plasma</div>
+            <div id="collapse1" class="panel-collapse collapse">
+              <div class="panel-body project-body">
+                <p>At the <a href="www.pppl.gov">Princeton Plasma Physics Lab</a>, I spent a summer trying to figure out how certain types of plasma behave. Specifically, we were trying to determine how dust-acoustic shockwaves propagated through complex plasma - that is, plasma that was made up of electrons, ions, and dust particles. The trouble was, these types of shockwaves are hard to induce; most of my work involved designing and running experiments to produce them. The experiment was enclosed in a vacuum chamber, making adjustments difficult.</p>
+                
+                <p> My main contribution was the development of a mechanism for adjusting the experimental setup on the fly, without needing to open the vacuum chamber. This was made possible by passing a cylindrical rod through two Wilson seals on opposite sides of the chamber, and suspending a "nozzle" - a metal plate with a small hole - from this rod. By rotating the rod, the plate's height could be adjusted, allowing rapid data collection on the nozzle's effect on waves in the plasma</p>
+                
+                <p>I also did a bunch of stuff in MATLAB to automate retrieval of data from the high-speed camera, and to automatically figure out wave propagation speeds from the camera images.</p><img src="http://2.bp.blogspot.com/-mDBDWVCkMI0/UCGPS1pvHvI/AAAAAAAAAxs/oozOwhYBhu0/s1600/IMG_20120807_172537.jpg" alt="Suspended nozzle" class="p_img_detail" /><img src="http://1.bp.blogspot.com/-oPuThsPP9uY/UA8NDy7n6pI/AAAAAAAAAt8/6akOZONtsLI/s1600/100-40-200-300_2.gif" alt="Stable wave propagation" class="p_img_detail" />
+              </div>
+            </div>
+          </div>
+
+           
+          </div>
+          <!--div class="panel panel-default collapsed" data-toggle="collapse" data-parent="#col-personal" data-target="#collapse3">
+        <div class="panel-heading">
+          <h4 class="panel-title project-title">Project</h4>
+        </div>
+        <div class="panel-body project-summary">Summary</div>
+        <div id="collapse3" class="panel-collapse collapse">
+          <div class="panel-body project-body">Body</div>
+        </div>
+      </div-->
+        
+      </div>
+      <div class="container col-md-6">
+        <!--div class="h2 col-heading">Work projects</div-->
+        <div class="panel-group" id="col-work">
+          <div class="panel panel-default collapsed" data-toggle="collapse" data-parent="#col-work" data-target="#w_1">
+            <div class="panel-heading">
+              <h4 class="panel-title project-title">Automated retrieval and classification of celestial objects<div class="project-date">12/2011-1/2013</div></h4>
+            </div>
+            <div class="panel-body project-summary">There's a lot of data on uncategorized celestial objects; being able to automatically classify them is very useful.</div>
+            <div id="w_1" class="panel-collapse collapse">
+              <div class="panel-body project-body">
+                <p>Through the astronomy department of Phillips Academy, I was able to get involved in the <a href="http://nitarp.ipac.caltech.edu/">NASA/IPAC Teacher Archive Research Program</a>. The project involved the categorization of 250 previously unclassified ultra-blue sources gathered from the Kepler Field. Along with another student involved with the project, I presented a poster at the biannual American Astronomical Society Conference; you can see that poster <a href="info/NITARP-poster.pdf">here</a>. From the set, we ended up identifying a number of white dwarfs, along with a few cataclysmic variables, active galactic nuclei, X-ray binaries, and planetary nebula nuclei.</p>
+                
+                <p>My role was in the automation of the classification process. Classification was done by analyzing the spectral energy distribution (SED) plots for different objects, and comparing them to known SED profiles. To massively speed up the process, I wrote programs to collect all of the necessary data from various online databases and automatically generate the SED curves. I also experimented with generation of similarity scores between these new profiles and those of known objects; though the process worked fairly well, all of the objects were nevertheless confirmed by hand and using other tools.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="panel panel-default collapsed" data-toggle="collapse" data-parent="#col-work" data-target="#w_2">
+            <div class="panel-heading">
+              <h4 class="panel-title project-title">Meteor tracking<div class="project-date">9/2012-8/2013</div></h4>
+            </div>
+            <div class="panel-body project-summary">With a CCD camera, and wide-angle lens, and some software, we can identify and track meteors and meteor showers and learn a lot about them.</div>
+            <div id="w_2" class="panel-collapse collapse">
+              <div class="panel-body project-body">
+                <p>Another project I was involved in with the PA astronomy department involved the set-up of an automated meteor tracking camera on the roof of our observatory. Connected to a computer running the <a href="http://www.metrec.org/">MetRec</a> software, we were able to get nightly readings of detected meteors and meteor showers, when weather allowed. I also developed some tools to generate summaries, remove clouds and other false positives, and operate the system remotely.</p>
+              </div>
+            </div>
+          </div>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script></body>
+</html>

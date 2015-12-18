@@ -1,0 +1,225 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Sam Khalandovsky | Robotics Projects</title>
+  </head>
+  <body>
+  <header class="sticky-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="nav-name">
+            <a href="index.html">Sam Khalandovsky</a>
+          </div>
+        </div>
+        <nav class="col-md-9">
+          <ul class="nav-menu">
+            <li class="menu-item">
+              <a href="index.html">About me</a>
+            </li>
+            <li class="menu-item active">
+              <a href="robotics.html">Robotics Projects</a>
+            </li>
+            <li class="menu-item">
+              <a href="other.html">Other Projects</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <div class="main">
+  <div class="h2">Robotics Projects</div>
+    <div class="row">
+      <div class="container col-md-6">
+        <!--div class="h2 col-heading">Personal and Class Projects</div-->
+        <div class="panel-group" id="col-personal">
+          <div class="panel panel-default collapsed" data-toggle="collapse" data-parent="#col-personal" data-target="#collapse1">
+            <div class="panel-heading">
+              <h4 class="panel-title project-title">Automated Production Line <div class="project-date">1-3/2015</div>
+              </h4>
+              
+            </div>
+            <div class="panel-body project-summary"><img src="images/3001-render.jpg" alt="2-DOF robot arm" class="p_thumb" />A class project for "Unified Robotics: Manipulation". The task: program a robot
+            arm to sort blocks on a conveyer belt.</div>
+            <div id="collapse1" class="panel-collapse collapse">
+              <div class="panel-body project-body">
+                <p>The arm is made of 3D-printed plastic and a couple of Pololu motors, with potentiometers and encoders for joint
+                angle feedback and a standard gripper assembly for picking up blocks. The blocks are detected with a pair of IR
+                sensors mounted near the conveyor belt; some inverse kinematics later and they're grabbed by the arm. Weighing is a
+                simple matter of looking at the step response of the arm to a small voltage. Some more inverse kinematics and the
+                arm drops the block in the appropriate area.</p>
+                
+                <p>I also made a nice MATLAB interface for plotting data from the arm in real-time, drawing a live stick-model of
+                the robot, and sending it commands to move the arm to a specified location with a click. The data is streamed back
+                from the arm over a serial connection, and the robot listens simultaneously listens for incoming commands over the
+                same line.</p><img src="images/3001-arm-side.jpg" alt="2-DOF robot arm" class="p_img_detail" />
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default collapsed" data-toggle="collapse" data-parent="#col-personal" data-target="#collapse2">
+            <div class="panel-heading">
+              <h4 class="panel-title project-title">Grasping via handle detection<div class="project-date">9-10/2014</div></h4>
+            </div>
+            <div class="panel-body project-summary"><img src="images/CARL-thumb.jpg" alt="CARL robot grabbing cup" class="p_thumb" />A project in the 
+            <a href="http://web.cs.wpi.edu/~rail/">RAIL Lab</a> using their robot CARL.</div>
+            <div id="collapse2" class="panel-collapse collapse">
+              <div class="panel-body project-body">Building on research done by Rob Platt, I worked on identification of object
+              handles and automatic grasping of objects. The robot CARL (Crowdsourced Autonomy and Robot Learning) was equipped
+              with a 3-fingered 6-DOF JACO arm, which I used for the grasping tasks. Object handles were identified by processing
+              pointcloud data from a Kinect mounted on CARL.</div>
+            </div>
+          </div>
+          <div class="panel panel-default collapsed" data-toggle="collapse" data-parent="#col-personal" data-target="#collapse3">
+            <div class="panel-heading">
+              <h4 class="panel-title project-title">SLAM on the Neato robot<div class="project-date">8/2014</div></h4>
+            </div>
+            <div class="panel-body project-summary"><img src="images/neato-thumb.png" alt="Neato vacuum robot" class="p_thumb" />The Neato robot has a LIDAR sensor on it. Time to give it some better
+            navigation.</div>
+            <div id="collapse3" class="panel-collapse collapse">
+              <div class="panel-body project-body">
+                <p>After discovering that Neato robot vacuum cleaners have fully functioning scanning LIDAR sensors and an
+                available USB interface for getting all of that data, I wrote up some ROS drivers for it (then discovered someone
+                else had done it already), hooked it up to some localization and mapping packages, and tweaked them for the robot's
+                dimensions. Essentially, I've got a $200 
+                <a href="http://turtlebot.com">TurtleBot</a>. Maybe its turning isn't 
+                <i>quite</i> as precise, but it's also not $2000.</p> 
+                <p>Since a tethered robot isn't much fun, I hooked it up with Raspberry Pi and a battery in the dust-bin area to act as its brain, and used the Pi Camera for a live video feed. With this setup, I could access the Pi remotely over the internet from anywhere, give commands to drive the robot, and view the live video. Next steps could be: <ul><li>Hook up to Pi to the robot's internal battery, so that it could charge itself from the charging station</li><li>Make a web-interface for the remote connection</li><li>Give it some autonomy to patrol the house</li></ul></p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default collapsed" data-toggle="collapse" data-parent="#col-personal" data-target="#collapse4">
+            <div class="panel-heading">
+              <h4 class="panel-title project-title">Force control with series-elastic actuators<div class="project-date">3-5/2014</div></h4>
+            </div>
+            <div class="panel-body project-summary">A class project for "Unified Robotics: Sensing". The task: apply precise
+            amounts of force to an actuator. Incidentally, also erase a whiteboard while hanging from a tether.</div>
+            <div id="collapse4" class="panel-collapse collapse">
+              <div class="panel-body project-body">
+                <p>The robot was built almost entirely out of laser-cut acrylic pieces, and engraved with its nickname "2-CHAINZ"
+                in honor of the two chain-and-sprocket mechanisms that supplied power to the actuator. Force control was done using
+                a typical linear series-elastic setup: two acrylic plates slid on four connecting rails, with springs sandwiched
+                between them. A linear potentiometer connected to both parts provided the distance between them, and hence the
+                applied force. The motor driving the back plate was controlled with a PID loop that maintained the actuator at a
+                constant pressure.</p>
+                <p>To actually erase, we made the eraser actuator spin using a "Multiple Gearing" mechanism, which uses grooves,
+                sliding pins, and an axle-less gear to accomplish essentially the same thing as an ordinary gear pair. Why? It was
+                fun to design and build. As far as we could tell, there is no good reason to ever use this mechanism in any
+                application.</p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default collapsed" data-toggle="collapse" data-parent="#col-personal" data-target="#collapse5">
+            <div class="panel-heading">
+              <h4 class="panel-title project-title">Mock reactor maintenance robot<div class="project-date">1-3/2014</div></h4>
+            </div>
+            <div class="panel-body project-summary">A class project for "Unified Robotics: Actuation". The task was to build a
+            robot that would autonomously move around a mock "nuclear reactor" and complete various tasks.</div>
+            <div id="collapse5" class="panel-collapse collapse">
+              <div class="panel-body project-body">The robot was built mostly out of laser-cut acrylic, and was designed with a
+              2-DOF arm with a gripper for manipulating the "fuel rods".</div>
+            </div>
+          </div>
+          <div class="panel panel-default collapsed" data-toggle="collapse" data-parent="#col-personal" data-target="#collapse6">
+            <div class="panel-heading">
+              <h4 class="panel-title project-title">DARPA Robotics Challenge<div class="project-date">1-4/2014</div></h4>
+            </div>
+            <div class="panel-body project-summary">Humanoid robots need pretty complex control interfaces.</div>
+            <div id="collapse6" class="panel-collapse collapse">
+              <div class="panel-body project-body">I worked briefly on the WPI-CMU DARPA Robotics Challenge team (then known as
+              WRECS). I was involved in improving the interfaces used by the operators to make control more fluid and
+              efficient.</div>
+            </div>
+          </div>
+          <div class="panel panel-default collapsed" data-toggle="collapse" data-parent="#col-personal" data-target="#collapse7">
+            <div class="panel-heading">
+              <h4 class="panel-title project-title">Soft Robotic Gripper <div class="project-date">10-12/2013</div></h4>
+            </div>
+            <div class="panel-body project-summary">Developing models and simulations for a novel pneumatic gripper</div>
+            <div id="collapse7" class="panel-collapse collapse">
+              <div class="panel-body project-body">At Dmitry Berenson's 
+              <a href="http://arc.wpi.edu">ARC Lab</a>, I worked on developing a better model of their soft pneumatic gripper to
+              aid in the development of grasping algorithms. The hand was made of five silicone fingers which bent in a specific
+              direction when the interior air cavity was pressurized. My work was in characterizing the fingers' response to
+              pressure (via processing images of the fingers in MATLAB) and extending the VoxCAD engine to be used as a testbed for
+              grasping algorithms.</div>
+            </div>
+          </div>
+          <!--div class="panel panel-default collapsed" data-toggle="collapse" data-parent="#col-personal" data-target="#collapse3">
+        <div class="panel-heading">
+          <h4 class="panel-title project-title">Project</h4>
+        </div>
+        <div class="panel-body project-summary">Summary</div>
+        <div id="collapse3" class="panel-collapse collapse">
+          <div class="panel-body project-body">Body</div>
+        </div>
+      </div-->
+        </div>
+      </div>
+      <div class="container col-md-6">
+        <!--div class="h2 col-heading">Work projects</div-->
+        <div class="panel-group" id="col-work">
+          <div class="panel panel-default collapsed" data-toggle="collapse" data-parent="#col-work" data-target="#w_1">
+            <div class="panel-heading">
+              <h4 class="panel-title project-title">Localization of self-driving cars<div class="project-date">5-6/2014</div></h4>
+            </div>
+            <div class="panel-body project-summary">MIT Lincoln Lab has developed a novel sensor for car localization, so I needed to solve the global localization problem for GPS-denied operation</div>
+            <div id="w_1" class="panel-collapse collapse">
+              <div class="panel-body project-body">
+                <p>A new sensor was developed at Lincoln Lab, called "Localizing Ground Penetrating Radar". In essence, it is a radar array mounted to the underside of a vehicle. As the car drives, the radar maps out the road's subsurface features, capturing man-made objects like pipes along with rocks and soil of different denisites. The result is a 3D voxel grid of sensor readings along the vehicles path, aproximately as wide as the vehicle itself and 2-3 meters deep. Once the map is built, it can later be used to localize the car with amazing accuracy even at highway speeds.</p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default collapsed" data-toggle="collapse" data-parent="#col-work" data-target="#w_2">
+            <div class="panel-heading">
+              <h4 class="panel-title project-title">Packbot LIDAR navigation<div class="project-date">5-6/2014</div></h4>
+            </div>
+            <div class="panel-body project-summary"><img src="images/packbot-thumb.jpg" alt="Packbot tracked robot" class="p_thumb" />A project for MIT Lincoln Lab, involving autonomous obstacle avoidance with iRobot's Packbot bomb-disposal robot.</div>
+            <div id="w_2" class="panel-collapse collapse">
+              <div class="panel-body project-body">
+                <p>At MIT Lincoln Lab, I worked on developing autonomous driving capability for the Packbot. Using a scanning LIDAR sensor mounted to the Packbot's base as the primary sensor, I was able to perform <span class="define" title="Simultaneous Localization and Mapping">SLAM</span> to generate maps and use them for motion-planning while avoiding obstacles. 
+                </p>
+                <p> The Packbot used two onboard computers; one was in charge of low-level functions such as motor and arm control, while the other ran and performed high-level tasks such as motion planning. A ROS node I wrote took care of two-way communication between the two computers. The navigator computer also took input over Bluetooth from a gamepad, and communicated with an external controller laptop over WiFi.</p>
+                <p> While working on this project I had a chance to give a short talk and demo of the Packbot to a group from MIT's MITES program, which was also fun.</p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default collapsed" data-toggle="collapse" data-parent="#col-work" data-target="#w_3">
+            <div class="panel-heading">
+              <h4 class="panel-title project-title">LandShark GPS-INS navigation<div class="project-date">6-7/2014</div></h4>
+            </div>
+            <div class="panel-body project-summary"><img src="images/landshark-thumb.jpg" alt="LandShark 6-wheeled robot" class="p_thumb" />Developing waypoint following and GPS-INS navigation with Black-i Robotics' LandShark bomb-disposal robot.</div>
+            <div id="w_3" class="panel-collapse collapse">
+              <div class="panel-body project-body">At MIT Lincoln Laboratory, I was tasked with integrating their LandShark robot with <span class="define" title="Robot Operating System">ROS</span>, and developing code for waypoint-based patrolling using the onboard GPS and <span class="define" title="Inertial Navigation System">INS</span> systems. To this end I wrote ROS drivers to process the GPS and INS data, and used a pure-pursuit method for trajectory planning via provided GPS waypoints. This was all wrapped up in a graphical interface to allow clicking on a map on which the robot's calculated trajectory and waypoints would be displayed.</div>
+            </div>
+          </div>
+          <div class="panel panel-default collapsed" data-toggle="collapse" data-parent="#col-work" data-target="#w_4">
+            <div class="panel-heading">
+              <h4 class="panel-title project-title">Autonomous quadrotor localization<div class="project-date">7/2014</div></h4>
+            </div>
+            <div class="panel-body project-summary">One way to solve the global localization problem for quadrotors is to give them a mobile ground vehicle to track.</div>
+            <div id="w_4" class="panel-collapse collapse">
+              <div class="panel-body project-body">The idea behind this project was to allow an autonomous quadrotor to localize itself without GPS, instead using it's camera to track a collaborating ground vehicle. Doing this also has the added advantage of being to very accurately track relative position to the vehicle, allowing difficult maneuvers such as landing on it for recharging. I used the Asctec Pelican quadrotor, a beefy platform with an onboard RGBD Kinect-type camera, and a Packbot bomb-disposal robot to test this idea. By attaching a QR code to the top of the robot, I was able develop a system for the Pelican to keep the QR code within it's field of vision while flying and use the RGBD camera to get it's relative position.</div>
+            </div>
+          </div>
+          <div class="panel panel-default collapsed" data-toggle="collapse" data-parent="#col-work" data-target="#w_5">
+            <div class="panel-heading">
+              <h4 class="panel-title project-title">Telepresence<div class="project-date">1-6/2011</div></h4>
+            </div>
+            <div class="panel-body project-summary">Various work with increasing the autonomy of telepresence robots</div>
+            <div id="w_5" class="panel-collapse collapse">
+              <div class="panel-body project-body"><p>Working at UMass Lowell's robotics lab, I was involved in developing autonomous capability for several telepresense robots. Using the ATRV-Jr rover as a platform, I investigated ways to allow it to be used as a "smart" telepresence robot. If you're being represented at a location by a telepresense robot, you don't want to be focusing all of your attention on driving the robot; you want to be interacting with people naturally. One of the goals behind this work was to be able to walk alongside a telepresense robot, having a natural conversation with the person on the other end, while the robot handled driving alongside you autonomously. To do this, I integrated a vector field histogram navigation algorithm on the robot for obstacle avoidance while having it follow what it saw as a "target person". At first, this was done using the Hokuyo scanning LIDAR sensor on the front of the robot; the legs of the target were visible to the robot where they intersected the LIDAR beam. Later, a thermal camera on a pan-tilt mechanism was used to detect the target's heat signature, which was a more robust way to keep track of the target.</p>
+              <p>Besides this main one, there were a couple of related projects I worked on. For the lab's VGo telepresence robot, I developed drivers to use the custom magnetic encoders on its wheels to get odometry for dead-reckoning navigation. I also created some logging utilities for use in the lab's experiments in trust between robots and their operators.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script></body>
+</html>
