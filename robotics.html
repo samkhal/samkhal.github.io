@@ -39,8 +39,38 @@
   <div class="h2">Robotics Projects</div>
     <div class="row">
       <div class="container col-md-6">
-        <!--div class="h2 col-heading">Personal and Class Projects</div-->
+        <div class="h3 col-heading">Personal and Academic Projects</div>
         <div class="panel-group" id="col-personal">
+            <div class="panel panel-default collapsed" data-toggle="collapse" data-parent="#col-personal" data-target="#collapse11">
+            <div class="panel-heading">
+              <h4 class="panel-title project-title">Virtual fixtures for assisted robotic surgery<div class="project-date">1-5/2015</div>
+              </h4>
+              
+            </div>
+            <div class="panel-body project-summary"><img src="images/da-vinci-thumb.jpg" alt="Da Vinci Robot arms" class="p_thumb" />Currently, robotic surgery is purely teleoperated. What if the robot could assist the surgeon without taking away any of the surgeon's control? We developed "virtual fixtures" that could help guide a surgeon's hand.</div>
+            <div id="collapse11" class="panel-collapse collapse">
+              <div class="panel-body project-body">
+                As part of a course titled "Robot Dynamics", I worked with four other students on a project at WPI's <a href="http://aimlab.wpi.edu/">AIM Lab</a>. Utilizing the lab's two Da Vinci surgical robot arms, we developed a system that could help guide a surgeon's hand without imposing any hard limits. By default, the system works by having the surgical manipulators exactly mimic the motions of the surgeon's hand (scaled down and with tremors filtered out). As a test case for our system, we showed that "virtual fixtures" could be defined to apply forces to the surgeon's hand based on pre-defined targets; for instance, if the surgeon needs to follow a certain curve to make a cut, the robot can apply a force to the controling hand to make following the line easier. At the same time, the fixture is "soft", and easily overcome if necessary.
+                
+                Using a camera, we were able to register a target line drawn on a piece of paper and placed in the robot's workspace. Transforming that line into the robot's working coordinates, we applied proportional forces to push the controller gently towards the line. We even showed that an operator could follow the line without difficult with their eyes closed, using only the haptic feedback our system provided.
+              </div>
+            </div>
+            </div>
+            <div class="panel panel-default collapsed" data-toggle="collapse" data-parent="#col-personal" data-target="#collapse10">
+            <div class="panel-heading">
+              <h4 class="panel-title project-title">Frontier Exploration<div class="project-date">3-5/2015</div>
+              </h4>
+              
+            </div>
+            <div class="panel-body project-summary"><img src="images/turtlebot.png" alt="Turtlebot" class="p_thumb" />A  project for the class "Unified Robotics: Navigation". The task is to program a Turtlebot to explore and map an unknown area.</div>
+            <div id="collapse10" class="panel-collapse collapse">
+              <div class="panel-body project-body">
+                <p>The task in this challenge was to develop code for a Turtlebot for exploring and mapping a previously-unseen area. Equipped with a Kinect for detecting walls, our solution would continually add the surrounding visible area to the known map using a SLAM algorithm. It would then identify map frontiers: borders between known and unknown space. If the frontier was reachable through the known area of the map, the robot would identify a point from which the frontier would be visible, create a trajectory using a smoothed A* algorithm, and attempt to follow that trajectory. Once the target was reached, the Turtlebot could eliminate the frontier by looking at the space beyond it and adding it to the map, potentially introducing new frontiers in the process. These steps were then repeated until no more reachable frontiers existed on the map.</p>
+                
+                <p>To optimize the efficiency of exploration, frontiers were prioritized based on their proximity and size. By exploring local frontiers first, the robot was able to fully explore the local space (i.e. the room it is in) before venturing futher. By priorizing large frontiers, the Turtlebot first mapped out "easy" areas, often eliminating small frontiers in the process. These small frontiers were often sections of wall missed during mapping or other anomalies; saving them for last allowed the robot to do the bulk of exploration first, before going back to clean up these discrepancies.</p>
+              </div>
+            </div>
+            </div>
           <div class="panel panel-default collapsed" data-toggle="collapse" data-parent="#col-personal" data-target="#collapse1">
             <div class="panel-heading">
               <h4 class="panel-title project-title">Automated Production Line <div class="project-date">1-3/2015</div>
@@ -72,7 +102,7 @@
             <a href="http://web.cs.wpi.edu/~rail/">RAIL Lab</a> using their robot CARL.</div>
             <div id="collapse2" class="panel-collapse collapse">
               <div class="panel-body project-body">Building on research done by Rob Platt, I worked on identification of object
-              handles and automatic grasping of objects. The robot CARL (Crowdsourced Autonomy and Robot Learning) was equipped
+              handles and automatic grasping of objects. The robot <span class="define" title="Crowdsourced Autonomy and Robot Learning">CARL</span> was equipped
               with a 3-fingered 6-DOF JACO arm, which I used for the grasping tasks. Object handles were identified by processing
               pointcloud data from a Kinect mounted on CARL.</div>
             </div>
@@ -164,13 +194,13 @@
         </div>
       </div>
       <div class="container col-md-6">
-        <!--div class="h2 col-heading">Work projects</div-->
+        <div class="h3 col-heading">Work projects</div>
         <div class="panel-group" id="col-work">
           <div class="panel panel-default collapsed" data-toggle="collapse" data-parent="#col-work" data-target="#w_1">
             <div class="panel-heading">
               <h4 class="panel-title project-title">Localization of self-driving cars<div class="project-date">5-7/2015</div></h4>
             </div>
-            <div class="panel-body project-summary">MIT Lincoln Lab has developed a novel sensor for car localization, so I needed to solve the global localization problem for GPS-denied operation</div>
+            <div class="panel-body project-summary"><img src="images/LGPR-thumb.png" alt="Ground penetrating radar on a self-driving car" class="p_thumb" />MIT Lincoln Lab has developed a novel sensor for car localization, so I needed to solve the global localization problem for GPS-denied operation</div>
             <div id="w_1" class="panel-collapse collapse">
               <div class="panel-body project-body">
                 <p>A new sensor was developed at Lincoln Lab, called "Localizing Ground Penetrating Radar". In essence, it is a radar array mounted to the underside of a vehicle. As the car drives, the radar maps out the road's subsurface features, capturing man-made objects like pipes along with rocks and soil of different denisites. The result is a 3D voxel grid of sensor readings along the vehicles path, aproximately as wide as the vehicle itself and 2-3 meters deep. Once the map is built, it can later be used to localize the car with amazing accuracy even at highway speeds.</p>
