@@ -41,6 +41,26 @@
       <div class="container col-md-6">
         <div class="h3 col-heading">Personal and Academic Projects</div>
         <div class="panel-group" id="col-personal">
+            
+            <div class="panel panel-default collapsed" data-toggle="collapse" data-parent="#col-personal" data-target="#p_biped">
+            <div class="panel-heading">
+              <h4 class="panel-title project-title">Bipedal Walking<div class="project-date">1/2016-Present<div>
+              </h4>
+              
+            </div>
+            <div class="panel-body project-summary"><img src="images/Caminante-thumb.png" alt="Da Vinci Robot arms" class="p_thumb" />Let's do efficient walking controls!</div>
+            <div id="p_biped" class="panel-collapse collapse">
+              <div class="panel-body project-body">
+              <p>
+                This robot, formerly known as "Caminante", was built a few years back but was abandoned without anybody having developed controls for it. As my senior capstone, I'm leading a team of 5 to resurrect this machine, redesign and rebuild much of it's mechanics and electronics, and develop walking controls for it from scratch. The robot has a number of interesting features, foremost among them being the series-elastic driven joints: each joint is connected to a motor through a system of springs and cables. These springs could allow for walking gaits that take advantage of them as energy storage during each stride, thus requiring less energy input from the batteries.</p>
+              <p>
+                We've already developed proof-of-concept walking controls for the robot in simulation, and are eagerly looking forward to implementing them on the robot. An early version of walking in simulation can be seen <a href="https://www.youtube.com/watch?v=C8xiQ3iNlT0">here</a>.
+              </p>
+              </div>
+            </div>
+            </div>
+            
+
             <div class="panel panel-default collapsed" data-toggle="collapse" data-parent="#col-personal" data-target="#collapse11">
             <div class="panel-heading">
               <h4 class="panel-title project-title">Virtual fixtures for assisted robotic surgery<div class="project-date">1-5/2015</div>
@@ -56,6 +76,7 @@
               </div>
             </div>
             </div>
+
             <div class="panel panel-default collapsed" data-toggle="collapse" data-parent="#col-personal" data-target="#collapse10">
             <div class="panel-heading">
               <h4 class="panel-title project-title">Frontier Exploration<div class="project-date">3-5/2015</div>
@@ -195,6 +216,19 @@
       <div class="container col-md-6">
         <div class="h3 col-heading">Work projects</div>
         <div class="panel-group" id="col-work">
+          <div class="panel panel-default collapsed" data-toggle="collapse" data-parent="#col-work" data-target="#w_comma">
+            <div class="panel-heading">
+              <h4 class="panel-title project-title">Controls for self-driving cars<div class="project-date">5-8/2016</div></h4>
+            </div>
+            <div class="panel-body project-summary">Building an affordable self-driving kit</div>
+            <div id="w_comma" class="panel-collapse collapse">
+              <div class="panel-body project-body">
+                <p>At Comma.ai, the goal was to build an inexpensive aftermarket kit to provide autonomous functions. As a prerequisite to driving itself, the car must know where it is located with a great deal of precision, ideally taking advantage of all of the sensor data it has at its disposal. Working with inexpensive GPS units, accelerometers, gyroscopes, wheel encoders, and the camera, I put together Kalman filters to fuse all of the data together and obtain a better estimate of the car position and speed than any individual sensor could provide. A critical part of this sensor fusion was my model of the car itself; by taking advantage of everything we knew about the car's dynamics, we could significantly limit the bounds on our estimates. For instance, your phone's location system will drift in some radius thanks to effects from GPS; however, since we know that a car cannot move sideways, we can intelligently use that information to limit how our error evolves. To accomplish this I developed a vehicle dynamics model, which was then integrated into the filter (making it an Extended Kalman Filter) along with the car's control inputs of gas, brake, and steering.</p>
+                
+                <p>As the Advanced Controls Lead, my job was to develop better approaches to control of the car, in order to provide a smoother driving experience. Quantitaively this meant minimizing acceleration and jerk during maneuvers; however, humans are fickle and will, for instance, have different levels of discomfort at high speed vs low speed when experiencing the same jerk. Still, I did my best to minimize "discomfort" which is a function of all of these different factors. By using trajectory optimization techniques and time-varying linear quadratic regulator control to follow those trajectories, more reliable and comfortable behaviors could be achieved. The hardest part of this problem, though, was accurately modelling the car. On top of the simplified dynamics model used for localization, trajectory generation and control required much more precise models, incorporating engine power curves, automatic gear-shift logic, and nonlinear braking forces.</p>
+              </div>
+            </div>
+          </div>
           <div class="panel panel-default collapsed" data-toggle="collapse" data-parent="#col-work" data-target="#w_1">
             <div class="panel-heading">
               <h4 class="panel-title project-title">Localization of self-driving cars<div class="project-date">5-7/2015</div></h4>
