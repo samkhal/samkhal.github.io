@@ -1,69 +1,263 @@
+---
+---
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
-    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <title>Sam Khalandovsky</title>
-  </head>
-  <body>
+	<head>
+		<title>Sam Khalandovsky</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body>
 
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">Sam Khalandovsky</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="menu-item active">
-              <a href="index.html">About Me</a>
-            </li>
-            <li class="menu-item">
-              <a href="robotics.html">Robotics Projects</a>
-            </li>
-            <li class="menu-item">
-              <a href="other.html">Other Projects</a>
-            </li>
-            
-          </ul>
+		<!-- Header -->
+			<div id="header">
 
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
-  
-  <div class="main">
-      <div class="row">
-        <div class="col-md-6">
-            <h3 class="intro-heading">
-                I'm Sam Khalandovsky, a Robotics Engineering student at WPI interested in control theory, machine learning, underactuated systems, and all things robotics.
-            </h3>
-            <p>I'm a senior working on my BS and MS degrees. I've done research in a number of areas of robotics and am always working on some project or another. I've worked on the high-level (motion planning, machine learning) and the low-level (controls, embedded programming), as well as in systems integration. I've played with simulation and modelling of a variety of systems. Lately I've been most interested in exploring control of dynamic and under-actuated systems, especially for bipedal walking. I've also been playing with neural networks and reinforcement learning to augment controls of highly dynamic systems.</p>
-            <p>When I'm not working on projects or research, I enjoy fencing, rock-climbing, and mountaineering. At WPI I'm involved in developing the Robotics Engineering program through the Rho Beta Epsilon Honor Society, and I'm in charge of managing the department's wiki to provide resources and help for robotics engineering students.</p>
-        </div>
-        
-        <div class="col-md-6">
-            <img class="coverimage" src="images/portrait2.JPG" width=400>
-        </div>
-      </div>
-    </div >
-  
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				<div class="top">
 
-  ga('create', 'UA-84599808-1', 'auto');
-  ga('send', 'pageview');
+					<!-- Logo -->
+						<div id="logo">
+							<span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
+							<h1 id="title">Sam Khalandovsky</h1>
+							<p>Robots and Stuff</p>
+						</div>
 
-</script>
-  </body>
+					<!-- Nav -->
+						<nav id="nav">
+							<!--
+
+								Prologue's nav expects links in one of two formats:
+
+								1. Hash link (scrolls to a different section within the page)
+
+								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+
+								2. Standard link (sends the user to another page/site)
+
+								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+
+							-->
+							<ul>
+								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
+								<li><a href="#robots" id="robots-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Robotics Projects</span></a></li>
+								<li><a href="#other" id="other-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Other Projects</span></a></li>
+								<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+				<div class="bottom">
+
+					<!-- Social Icons -->
+						<ul class="icons">
+							<!--li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li-->
+							<!--li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li-->
+							<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+							<!--li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li-->
+							<!--li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li-->
+						</ul>
+
+				</div>
+
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Intro -->
+					<section id="top" class="one dark cover">
+						<div class="container">
+
+							<header>
+								<div class="row">
+									<div class="8u 12u$(mobile)">
+										<h2 class="alt">I'm Sam Khalandovsky, a Robotics Engineering student at WPI interested in control theory, machine learning, underactuated systems, and all things robotics.</h2>
+										<p>I'm a senior working on my BS and MS degrees. I've done research in a number of areas of robotics and am always working on some project or another. I've worked on the high-level (motion planning, machine learning) and the low-level (controls, embedded programming), as well as in systems integration. I've played with simulation and modelling of a variety of systems. Lately I've been most interested in exploring control of dynamic and under-actuated systems, especially for bipedal walking. I've also been playing with neural networks and reinforcement learning to augment controls of highly dynamic systems.</p>
+	            						<p>When I'm not working on projects or research, I enjoy fencing, rock-climbing, and mountaineering. At WPI I'm involved in developing the Robotics Engineering program through the Rho Beta Epsilon Honor Society, where I'm the New Member Officer in charge of interviewing and inducting new members.</p>
+	            						<a href="#robots" class="button scrolly">Robotics Projects</a>
+            						</div>
+            						<img src="images/portrait2.JPG" class="4u 12u(mobile)">
+            						
+							</header>
+
+							<footer>
+								
+							</footer>
+
+						</div>
+					</section>
+
+				<!-- Portfolio -->
+					<section id="robots" class="two">
+						<div class="container">
+
+							<header>
+								<h2>Robotics Projects</h2>
+							</header>
+
+							<p>Below is a mix of various robotics work that I've done, including paid work, personal projects, research, and academic projects.</p>
+
+							<div class="row">
+								<!--div class="4u 12u$(mobile)"-->
+									<article class="item">
+										<a href="/projects/comma" class="image fit"><img src="CommaPictures/trackday-crop-square.jpg" alt="Me and other people in front of self-driving car" /></a>
+										<header>
+											<h3>Self-Driving Cars: Localization and Control</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="/projects/biped" class="image fit"><img src="/images/CaminantePic.PNG" alt="" /></a>
+										<header>
+											<h3>Biped Project</h3>
+										</header>
+									</article>
+								<!--/div>
+								<div class="4u 12u$(mobile)"-->
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
+										<header>
+											<h3>Magna Nullam</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
+										<header>
+											<h3>Natoque Vitae</h3>
+										</header>
+									</article>
+								<!--/div>
+								<div class="4u$ 12u$(mobile)"-->
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
+										<header>
+											<h3>Dolor Penatibus</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
+										<header>
+											<h3>Orci Convallis</h3>
+										</header>
+									</article>
+								<!--/div-->
+							</div>
+
+						</div>
+					</section>
+
+				<!-- About Me -->
+					<section id="other" class="three">
+						<div class="container">
+
+							<header>
+								<h2>Other Projects</h2>
+							</header>
+
+							<p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
+							egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
+							Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis
+							fusce hendrerit lacus ridiculus.</p>
+
+							<div class="row">
+								
+								
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
+										<header>
+											<h3>Rhoncus Semper</h3>
+										</header>
+									</article>
+								
+								
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
+										<header>
+											<h3>Magna Nullam</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
+										<header>
+											<h3>Natoque Vitae</h3>
+										</header>
+									</article>
+								
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
+										<header>
+											<h3>Dolor Penatibus</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
+										<header>
+											<h3>Orci Convallis</h3>
+										</header>
+									</article>
+								
+							</div>
+
+						</div>
+					</section>
+
+				<!-- Contact -->
+					<section id="contact" class="four">
+						<div class="container">
+
+							<header>
+								<h2>Contact</h2>
+							</header>
+
+							<p>Elementum sem parturient nulla quam placerat viverra
+							mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia
+							donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc
+							orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.</p>
+
+							<form method="post" action="#">
+								<div class="row">
+									<div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="Name" /></div>
+									<div class="6u$ 12u$(mobile)"><input type="text" name="email" placeholder="Email" /></div>
+									<div class="12u$">
+										<textarea name="message" placeholder="Message"></textarea>
+									</div>
+									<div class="12u$">
+										<input type="submit" value="Send Message" />
+									</div>
+								</div>
+							</form>
+
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+
+				<!-- Copyright -->
+					<!--ul class="copyright">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul-->
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollzer.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>

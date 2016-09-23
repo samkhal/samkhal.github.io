@@ -1,0 +1,11 @@
+---
+layout: project
+title: Frontier Exploration
+subtitle: WPI, Project for <i>Robot Navigation</i>
+project-date: March-May, 2015
+permalink: /projects/turtlebot
+main-image: <img src="/images/turtlebot.png" alt="Turtlebot" />
+---
+<p>The task in this challenge was to develop code for a Turtlebot for exploring and mapping a previously-unseen area. Equipped with a Kinect for detecting walls, our solution would continually add the surrounding visible area to the known map using a SLAM algorithm. It would then identify map frontiers: borders between known and unknown space. If the frontier was reachable through the known area of the map, the robot would identify a point from which the frontier would be visible, create a trajectory using a smoothed A* algorithm, and attempt to follow that trajectory. Once the target was reached, the Turtlebot could eliminate the frontier by looking at the space beyond it and adding it to the map, potentially introducing new frontiers in the process. These steps were then repeated until no more reachable frontiers existed on the map.</p>
+                
+<p>To optimize the efficiency of exploration, frontiers were prioritized based on their proximity and size. By exploring local frontiers first, the robot was able to fully explore the local space (i.e. the room it is in) before venturing futher. By priorizing large frontiers, the Turtlebot first mapped out "easy" areas, often eliminating small frontiers in the process. These small frontiers were often sections of wall missed during mapping or other anomalies; saving them for last allowed the robot to do the bulk of exploration first, before going back to clean up these discrepancies.</p>

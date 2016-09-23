@@ -1,0 +1,11 @@
+---
+layout: project
+title: Automated Production Line
+subtitle: WPI, Project for <i>Robot Manipulation</i>
+project-date: January-March, 2015
+permalink: /projects/robotarm
+main-image: <img src="/images/3001-render.png" alt="2-DOF robot arm" />
+---
+<p>The arm is made of 3D-printed plastic and a couple of Pololu motors, with potentiometers and encoders for joint angle feedback and a standard gripper assembly for picking up blocks. The blocks are detected with a pair of IR sensors mounted near the conveyor belt; some inverse kinematics later and they're grabbed by the arm. Weighing is a simple matter of looking at the step response of the arm to a small voltage. Some more inverse kinematics and the arm drops the block in the appropriate area to sort them by weight.</p>
+                
+<p>I also made a nice MATLAB interface for plotting data from the arm in real-time, drawing a live stick-model of the robot, and sending it commands to move the arm to a specified location with a click. The data is streamed back from the arm over a serial connection, and the robot listens simultaneously listens for incoming commands over the same line.</p><img src="/images/3001-arm-side.jpg" alt="2-DOF robot arm" class="p_img_detail" />

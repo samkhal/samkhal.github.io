@@ -1,0 +1,11 @@
+---
+layout: project
+title: Localization and Control of Self-Driving Cars
+subtitle: Comma.ai
+project-date: May-August 2016
+permalink: /projects/comma
+main-image: <img src="/CommaPictures/trackday-crop.jpg" alt="" />
+---
+<p>At Comma.ai, the goal was to build an inexpensive aftermarket kit to provide autonomous functions. As a prerequisite to driving itself, the car must know where it is located with a great deal of precision, ideally taking advantage of all of the sensor data it has at its disposal. Working with inexpensive GPS units, accelerometers, gyroscopes, wheel encoders, and the camera, I put together Kalman filters to fuse all of the data together and obtain a better estimate of the car position and speed than any individual sensor could provide. A critical part of this sensor fusion was my model of the car itself; by taking advantage of everything we knew about the car's dynamics, we could significantly limit the bounds on our estimates. For instance, your phone's location system will drift in some radius thanks to effects from GPS; however, since we know that a car cannot move sideways, we can intelligently use that information to limit how our error evolves. To accomplish this I developed a vehicle dynamics model, which was then integrated into the filter (making it an Extended Kalman Filter) along with the car's control inputs of gas, brake, and steering.</p>
+                
+<p>As the Advanced Controls Lead, my job was to develop better approaches to control of the car, in order to provide a smoother driving experience. Quantitaively this meant minimizing acceleration and jerk during maneuvers; however, humans are fickle and will, for instance, have different levels of discomfort at high speed vs low speed when experiencing the same jerk. Still, I did my best to minimize "discomfort" which is a function of all of these different factors. By using trajectory optimization techniques and time-varying linear quadratic regulator control to follow those trajectories, more reliable and comfortable behaviors could be achieved. The hardest part of this problem, though, was accurately modelling the car. On top of the simplified dynamics model used for localization, trajectory generation and control required much more precise models, incorporating engine power curves, automatic gear-shift logic, and nonlinear braking forces.</p>
