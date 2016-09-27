@@ -1,0 +1,16 @@
+---
+layout: project
+title: Packbot LIDAR navigation
+short-title: 
+desc: A project for MIT Lincoln Lab, involving autonomous obstacle avoidance with iRobot's Packbot bomb-disposal robot
+subtitle: MIT Lincoln Laboratory
+project-date: June-July, 2014
+order: 201406
+permalink: /projects/packbot
+main-image: <img src="/images/packbot-thumb.jpg" alt="Packbot tracked robot" />
+tags:
+- work
+---
+<p>At MIT Lincoln Lab, I worked on developing autonomous driving capability for the Packbot. Using a scanning LIDAR sensor mounted to the Packbot's base as the primary sensor, I was able to perform <span class="define" title="Simultaneous Localization and Mapping">SLAM</span> to generate maps and use them for motion-planning while avoiding obstacles. </p>
+<p> The Packbot used two onboard computers; one was in charge of low-level functions such as motor and arm control, while the other ran and performed high-level tasks such as motion planning. A ROS node I wrote took care of two-way communication between the two computers. The navigator computer also took input over Bluetooth from a gamepad, and communicated with an external controller laptop over WiFi.</p>
+<p> While working on this project I had a chance to give a short talk and demo of the Packbot to a group of students from MIT's MITES program, which was also fun.</p>

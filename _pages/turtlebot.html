@@ -2,9 +2,13 @@
 layout: project
 title: Frontier Exploration
 subtitle: WPI, Project for <i>Robot Navigation</i>
+desc: A project for the class "Unified Robotics: Navigation". The task was to program a Turtlebot to explore and map an unknown area.
 project-date: March-May, 2015
+order: 201503
 permalink: /projects/turtlebot
 main-image: <img src="/images/turtlebot.png" alt="Turtlebot" />
+tags:
+- academic
 ---
 <p>The task in this challenge was to develop code for a Turtlebot for exploring and mapping a previously-unseen area. Equipped with a Kinect for detecting walls, our solution would continually add the surrounding visible area to the known map using a SLAM algorithm. It would then identify map frontiers: borders between known and unknown space. If the frontier was reachable through the known area of the map, the robot would identify a point from which the frontier would be visible, create a trajectory using a smoothed A* algorithm, and attempt to follow that trajectory. Once the target was reached, the Turtlebot could eliminate the frontier by looking at the space beyond it and adding it to the map, potentially introducing new frontiers in the process. These steps were then repeated until no more reachable frontiers existed on the map.</p>
                 
