@@ -44,7 +44,7 @@
 
 							-->
 							<ul>
-								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
+								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">About Me</span></a></li>
 								<li><a href="#robots" id="robots-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Robotics Projects</span></a></li>
 								<li><a href="#other" id="other-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Other Projects</span></a></li>
 								<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
@@ -59,9 +59,13 @@
 						<ul class="icons">
 							<!--li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li-->
 							<!--li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li-->
-							<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-							<!--li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li-->
-							<!--li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li-->
+							<li><a href="https://github.com/samkhal/" class="icon fa-github"><span class="label">Github</span></a></li>
+							<li><a href="https://www.linkedin.com/in/sam-khalandovsky-b1067ba0" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a id="email" class="icon fa-envelope"><span class="label">Email</span></a></li>
+							<script>
+							    var contactform =  document.getElementById('email');
+							    contactform.setAttribute('href', 'mailto:' + 'sam'+'khalandovsky' + '@' + 'gmail' + '.' + 'com');
+							</script>
 						</ul>
 
 				</div>
@@ -80,14 +84,15 @@
 									<div class="8u 12u$(mobile)">
 										<h2 class="alt">I'm Sam Khalandovsky, a Robotics Engineering student at WPI interested in control theory, machine learning, underactuated systems, and all things robotics.</h2>
 										<p>I'm a senior working on my BS and MS degrees. I've done research in a number of areas of robotics and am always working on some project or another. I've worked on the high-level (motion planning, machine learning) and the low-level (controls, embedded programming), as well as in systems integration. I've played with simulation and modelling of a variety of systems. Lately I've been most interested in exploring control of dynamic and under-actuated systems, especially for bipedal walking. I've also been playing with neural networks and reinforcement learning to augment controls of highly dynamic systems.</p>
-	            						<p>When I'm not working on projects or research, I enjoy fencing, rock-climbing, and mountaineering. At WPI I'm involved in developing the Robotics Engineering program through the Rho Beta Epsilon Honor Society, and I'm in charge of managing the department's wiki to provide resources and help for robotics engineering students.</p>
+	            						<p>When I'm not working on projects or research, I enjoy fencing, rock-climbing, and mountaineering. At WPI I'm involved in developing the Robotics Engineering program through the Rho Beta Epsilon Honor Society, where I'm the New Member Officer in charge of interviewing and inducting new members.</p>
+	            						<a href="#robots" class="button scrolly">Robotics Projects</a>
             						</div>
             						<img src="images/portrait2.JPG" class="4u 12u(mobile)">
             						
 							</header>
 
 							<footer>
-								<a href="#robots" class="button scrolly">Robotics Projects</a>
+								
 							</footer>
 
 						</div>
@@ -101,54 +106,261 @@
 								<h2>Robotics Projects</h2>
 							</header>
 
-							<p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
-							egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
-							Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis
-							fusce hendrerit lacus ridiculus.</p>
+							<p>Below is a mix of various robotics work that I've done, including paid work, personal projects, research, and academic projects.</p>
 
-							<div class="row">
-								<div class="4u 12u$(mobile)">
-									<article class="item">
-										<a href="comma.html" class="image fit"><img src="CommaPictures/trackday-crop-square.jpg" alt="" /></a>
-										<header>
-											<h3>Self-Driving Cars: Localization and Control</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-										<header>
-											<h3>Rhoncus Semper</h3>
-										</header>
-									</article>
-								</div>
-								<div class="4u 12u$(mobile)">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
-										<header>
-											<h3>Magna Nullam</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-										<header>
-											<h3>Natoque Vitae</h3>
-										</header>
-									</article>
-								</div>
-								<div class="4u$ 12u$(mobile)">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
-										<header>
-											<h3>Dolor Penatibus</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
-										<header>
-											<h3>Orci Convallis</h3>
-										</header>
-									</article>
-								</div>
+							<div class="row article-container">
+								
+								
+									
+					 					<article class="item">
+											<a href="/projects/comma" class="image fit">
+												<img src="/CommaPictures/trackday-crop.jpg" alt="" />
+												<div class="overlay">
+													<div class="description">Building an affordable self-driving kit
+													</div>
+												</div>
+											</a>
+											<header>
+												<h3>Localization and Control of Self-Driving Cars</h3>
+											</header>
+										</article> 
+									
+								
+									
+					 					<article class="item">
+											<a href="/projects/biped" class="image fit">
+												<img src="/images/CaminantePic.png" alt="" />
+												<div class="overlay">
+													<div class="description">Let's do efficient walking controls!
+													</div>
+												</div>
+											</a>
+											<header>
+												<h3>Bipedal Walking</h3>
+											</header>
+										</article> 
+									
+								
+									
+								
+									
+					 					<article class="item">
+											<a href="/projects/lgpr" class="image fit">
+												<img src="/images/LGPR-thumb.png" alt="Ground penetrating radar on a self-driving car" />
+												<div class="overlay">
+													<div class="description">MIT Lincoln Lab has developed a novel sensor for car localization, so I needed to solve the global localization problem for GPS-denied operation
+													</div>
+												</div>
+											</a>
+											<header>
+												<h3>Localization of Self-Driving Cars</h3>
+											</header>
+										</article> 
+									
+								
+									
+					 					<article class="item">
+											<a href="/projects/turtlebot" class="image fit">
+												<img src="/images/turtlebot.png" alt="Turtlebot" />
+												<div class="overlay">
+													<div class="description">A project for the class "Unified Robotics: Navigation". The task was to program a Turtlebot to explore and map an unknown area.
+													</div>
+												</div>
+											</a>
+											<header>
+												<h3>Frontier Exploration</h3>
+											</header>
+										</article> 
+									
+								
+									
+					 					<article class="item">
+											<a href="/projects/davinci" class="image fit">
+												<img src="/images/da-vinci-thumb.jpg" alt="Da Vinci Robot arms" />
+												<div class="overlay">
+													<div class="description">What if surgical robots could assist the surgeon without taking away any of the their control?
+													</div>
+												</div>
+											</a>
+											<header>
+												<h3>Virtual Fixtures for Assisted Robotic Surgery</h3>
+											</header>
+										</article> 
+									
+								
+									
+					 					<article class="item">
+											<a href="/projects/robotarm" class="image fit">
+												<img src="/images/3001-render.JPG" alt="2-DOF robot arm" />
+												<div class="overlay">
+													<div class="description">A class project for "Unified Robotics: Manipulation". The task: program a robot arm to sort blocks on a conveyer belt.
+													</div>
+												</div>
+											</a>
+											<header>
+												<h3>Automated Production Line</h3>
+											</header>
+										</article> 
+									
+								
+									
+					 					<article class="item">
+											<a href="/projects/grasping" class="image fit">
+												<img src="/images/CARL-thumb.jpg" alt="CARL robot grabbing cup" />
+												<div class="overlay">
+													<div class="description">A project in the RAIL Lab using their robot CARL
+													</div>
+												</div>
+											</a>
+											<header>
+												<h3>Grasping via Handle Detection</h3>
+											</header>
+										</article> 
+									
+								
+									
+					 					<article class="item">
+											<a href="/projects/neato" class="image fit">
+												<img src="/images/neato-thumb.png" alt="Neato robot vacuum" />
+												<div class="overlay">
+													<div class="description">The Neato robot has a LIDAR sensor on it. Time to give it some better navigation
+													</div>
+												</div>
+											</a>
+											<header>
+												<h3>SLAM on the Neato robot</h3>
+											</header>
+										</article> 
+									
+								
+									
+					 					<article class="item">
+											<a href="/projects/pelican" class="image fit">
+												<img src="/images/pelican.jpg" alt="Pelican Quadrotor" />
+												<div class="overlay">
+													<div class="description">One way to solve the global localization problem for quadrotors is to give them a mobile ground vehicle to track
+													</div>
+												</div>
+											</a>
+											<header>
+												<h3>Autonomous Quadrotor Localization</h3>
+											</header>
+										</article> 
+									
+								
+									
+					 					<article class="item">
+											<a href="/projects/landshark" class="image fit">
+												<img src="/images/landshark-thumb.jpg" alt="LandShark 6-wheeled robot" />
+												<div class="overlay">
+													<div class="description">Developing waypoint following and GPS-INS navigation with Black-i Robotics' LandShark bomb-disposal robot
+													</div>
+												</div>
+											</a>
+											<header>
+												<h3>LandShark GPS-INS navigation</h3>
+											</header>
+										</article> 
+									
+								
+									
+					 					<article class="item">
+											<a href="/projects/packbot" class="image fit">
+												<img src="/images/packbot-thumb.jpg" alt="Packbot tracked robot" />
+												<div class="overlay">
+													<div class="description">A project for MIT Lincoln Lab, involving autonomous obstacle avoidance with iRobot's Packbot bomb-disposal robot
+													</div>
+												</div>
+											</a>
+											<header>
+												<h3>Packbot LIDAR navigation</h3>
+											</header>
+										</article> 
+									
+								
+									
+					 					<article class="item">
+											<a href="/projects/2002" class="image fit">
+												<img src="/images/2002.jpg" alt="" />
+												<div class="overlay">
+													<div class="description">A class project for "Unified Robotics: Sensing". The task: apply precise amounts of force to an actuator, and use this to erase a whiteboard while hanging from a tether
+													</div>
+												</div>
+											</a>
+											<header>
+												<h3>Force Control with Series-Elastic Actuators</h3>
+											</header>
+										</article> 
+									
+								
+									
+					 					<article class="item">
+											<a href="/projects/atlas" class="image fit">
+												<img src="/images/warner.jpg" alt="WPI's Atlas robot" />
+												<div class="overlay">
+													<div class="description">Humanoid robots need pretty complex control interfaces
+													</div>
+												</div>
+											</a>
+											<header>
+												<h3>DARPA Robotics Challenge</h3>
+											</header>
+										</article> 
+									
+								
+									
+					 					<article class="item">
+											<a href="/projects/2001" class="image fit">
+												<img src="/images/2001.jpg" alt="" />
+												<div class="overlay">
+													<div class="description">A class project for "Unified Robotics: Actuation". The task was to build a robot that would autonomously move around a mock "nuclear reactor" and complete various tasks.
+													</div>
+												</div>
+											</a>
+											<header>
+												<h3>Mock Reactor Maintenance Robot</h3>
+											</header>
+										</article> 
+									
+								
+									
+					 					<article class="item">
+											<a href="/projects/softgripper" class="image fit">
+												<img src="/images/soft-hand.png" alt="Robotic hand with soft fingers" />
+												<div class="overlay">
+													<div class="description">Developing models and simulations for a novel pneumatic gripper
+													</div>
+												</div>
+											</a>
+											<header>
+												<h3>Soft Robotic Gripper</h3>
+											</header>
+										</article> 
+									
+								
+									
+								
+									
+								
+									
+								
+									
+					 					<article class="item">
+											<a href="/projects/telepresense" class="image fit">
+												<img src="/images/atrv-jr.jpg" />
+												<div class="overlay">
+													<div class="description">Various work with increasing the autonomy of telepresence robots
+													</div>
+												</div>
+											</a>
+											<header>
+												<h3>Telepresense Robot Navigation</h3>
+											</header>
+										</article> 
+									
+								
+									
+								
 							</div>
 
 						</div>
@@ -162,49 +374,105 @@
 								<h2>Other Projects</h2>
 							</header>
 
-							<p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
-							egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
-							Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis
-							fusce hendrerit lacus ridiculus.</p>
+							<p>Here's a few of the non-robotics-related projects I've been involved in.</p>
 
-							<div class="row">
-								<div class="4u 12u$(mobile)">
+							<div class="row article-container">
 								
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-										<header>
-											<h3>Rhoncus Semper</h3>
-										</header>
-									</article>
-								</div>
-								<div class="4u 12u$(mobile)">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
-										<header>
-											<h3>Magna Nullam</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-										<header>
-											<h3>Natoque Vitae</h3>
-										</header>
-									</article>
-								</div>
-								<div class="4u$ 12u$(mobile)">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
-										<header>
-											<h3>Dolor Penatibus</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
-										<header>
-											<h3>Orci Convallis</h3>
-										</header>
-									</article>
-								</div>
+								
+									
+								
+									
+								
+									
+					 					<article class="item">
+											<a href="/projects/iqp" class="image fit">
+												<img src="/images/zhaw.png" alt="ZHAW logo" />
+												<div class="overlay">
+													<div class="description">Two months in Zurich, Switzerland: how do we develop smarter energy solutions?
+													</div>
+												</div>
+											</a>
+											<header>
+												<h3>Zurich Smart Energy Regions</h3>
+											</header>
+										</article> 
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+					 					<article class="item">
+											<a href="/projects/meteor" class="image fit">
+												<img src="/images/meteor-camera.jpg" alt="Meteor camera" />
+												<div class="overlay">
+													<div class="description">With a CCD camera, a wide-angle lens, and some software, we can identify and track meteors and meteor showers and learn a lot about them.
+													</div>
+												</div>
+											</a>
+											<header>
+												<h3>Meteor Tracking</h3>
+											</header>
+										</article> 
+									
+								
+									
+					 					<article class="item">
+											<a href="/projects/pppl" class="image fit">
+												<img src="http://1.bp.blogspot.com/-CCOyU7s8LJU/UA26dYHJq0I/AAAAAAAAAqo/DQ8_3SS2hK8/s1600/IMG_20120723_161432.jpg" alt="Argon plasma in vacuum chamber" />
+												<div class="overlay">
+													<div class="description">Trying to characterize the behavior of dust-filled plasma
+													</div>
+												</div>
+											</a>
+											<header>
+												<h3>Plasma Physics Research</h3>
+											</header>
+										</article> 
+									
+								
+									
+					 					<article class="item">
+											<a href="/projects/nitarp" class="image fit">
+												<img src="/images/Howell-Everett-UBV-Survey.png" alt="Two-color plot of Howell-Everett UBV survey" />
+												<div class="overlay">
+													<div class="description">There's a lot of data on uncategorized celestial objects; being able to automatically classify them is very useful
+													</div>
+												</div>
+											</a>
+											<header>
+												<h3>Automatic Classification of Celestial Objects</h3>
+											</header>
+										</article> 
+									
+								
+									
+								
+									
+								
 							</div>
 
 						</div>
@@ -218,23 +486,26 @@
 								<h2>Contact</h2>
 							</header>
 
-							<p>Elementum sem parturient nulla quam placerat viverra
-							mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia
-							donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc
-							orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.</p>
+							<!--p></p-->
 
-							<form method="post" action="#">
+							<form id='contactform' method="POST">
 								<div class="row">
 									<div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="Name" /></div>
-									<div class="6u$ 12u$(mobile)"><input type="text" name="email" placeholder="Email" /></div>
+									<div class="6u$ 12u$(mobile)"><input type="text" name="_replyto" placeholder="Email" /></div>
 									<div class="12u$">
 										<textarea name="message" placeholder="Message"></textarea>
 									</div>
 									<div class="12u$">
 										<input type="submit" value="Send Message" />
 									</div>
+									<input type="text" name="_gotcha" style="display:none" />
+									<input type="hidden" name="_subject" value="Website contact" />
 								</div>
 							</form>
+							<script>
+							    var contactform =  document.getElementById('contactform');
+							    contactform.setAttribute('action', 'https://formspree.io/' + 'sam'+'khalandovsky' + '@' + 'gmail' + '.' + 'com');
+							</script>
 
 						</div>
 					</section>
@@ -259,6 +530,16 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+			<script>
+			  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			  ga('create', 'UA-84599808-1', 'auto');
+			  ga('send', 'pageview');
+
+			</script>
 
 	</body>
 </html>

@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<!-- based on Prologue by HTML5 UP-->
+<html>
+	<head>
+		<title>Automatic Classification of Celestial Objects</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="/assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+
+					<!-- Logo -->
+						<div id="logo">
+							<span class="image avatar48"><img src="/images/avatar.jpg" alt="" /></span>
+							<h1 id="title">Sam Khalandovsky</h1>
+							<p>Robots and Stuff</p>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<!--
+
+								Prologue's nav expects links in one of two formats:
+
+								1. Hash link (scrolls to a different section within the page)
+
+								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+
+								2. Standard link (sends the user to another page/site)
+
+								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+
+							-->
+							<ul>
+								<li><a href="/index.html#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">About Me</span></a></li>
+								<li><a href="/index.html#robots" id="robots-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Robotics Projects</span></a></li>
+								<li><a href="/index.html#other" id="other-link" class="skel-layers-ignoreHref"><span class="icon fa-user">Other Projects</span></a></li>
+								<li><a href="/index.html#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+				<div class="bottom">
+
+					<!-- Social Icons -->
+						<ul class="icons">
+							<!--li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li-->
+							<!--li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li-->
+							<li><a href="https://github.com/samkhal/" class="icon fa-github"><span class="label">Github</span></a></li>
+							<li><a href="https://www.linkedin.com/in/sam-khalandovsky-b1067ba0" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a id="email" class="icon fa-envelope"><span class="label">Email</span></a></li>
+							<script>
+							    var contactform =  document.getElementById('email');
+							    contactform.setAttribute('href', 'mailto:' + 'sam'+'khalandovsky' + '@' + 'gmail' + '.' + 'com');
+							</script>
+
+				</div>
+
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+					<section id="about" class="three">
+						<div class="container project">
+
+							<header>
+								<h2>Automatic Classification of Celestial Objects</h2>
+								<h3>Astronomy Department, Phillips Academy: <span class="project-date">December 2011-January 2013</span></h3>
+
+							</header>
+
+						<a href="#" class="image featured"><img src="/images/Howell-Everett-UBV-Survey.png" alt="Two-color plot of Howell-Everett UBV survey" /></a>
+						<p>Through the astronomy department of Phillips Academy, I was able to get involved in the <a href="http://nitarp.ipac.caltech.edu/">NASA/IPAC Teacher Archive Research Program</a>. The project involved the categorization of 250 previously unclassified ultra-blue sources gathered from the Kepler Field. Along with another student involved with the project, I presented a poster at the biannual American Astronomical Society Conference; you can see that poster <a href="/info/NITARP-poster.pdf">here</a>. From the set, we ended up identifying a number of white dwarfs, along with a few cataclysmic variables, active galactic nuclei, X-ray binaries, and planetary nebula nuclei.</p>
+                
+                <p>My role was in the automation of the classification process. Classification was done by analyzing the spectral energy distribution (SED) plots for different objects, and comparing them to known SED profiles. To massively speed up the process, I wrote programs to collect all of the necessary data from various online databases and automatically generate the SED curves. I also experimented with generation of similarity scores between these new profiles and those of known objects; though the process worked fairly well, all of the objects were nevertheless confirmed by hand and using other tools.</p>
+					</section>
+
+
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+
+				<!-- Copyright -->
+					<!--ul class="copyright">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul-->
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="/assets/js/jquery.min.js"></script>
+			<script src="/assets/js/jquery.scrolly.min.js"></script>
+			<script src="/assets/js/jquery.scrollzer.min.js"></script>
+			<script src="/assets/js/skel.min.js"></script>
+			<script src="/assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="/assets/js/main.js"></script>
+			<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-84599808-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+	</body>
+</html>
