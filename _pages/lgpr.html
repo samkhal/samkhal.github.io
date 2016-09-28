@@ -7,10 +7,11 @@ subtitle: MIT Lincoln Laboratory
 project-date: May-July, 2015
 order: 201505
 permalink: /projects/lgpr
-main-image: <img src="/images/LGPR-thumb.png" alt="Ground penetrating radar on a self-driving car" />
+main-image: <img src="/images/LGPR.png" alt="Ground penetrating radar on a self-driving car" />
+thumb-image: <img src="/images/LGPR-crop.png" alt="Ground penetrating radar on a self-driving car" />
 tags:
 - work
 ---
-<p>A new sensor was developed at Lincoln Lab, called "Localizing Ground Penetrating Radar". In essence, it is a radar array mounted to the underside of a vehicle. As the car drives, the radar maps out the road's subsurface features, capturing man-made objects like pipes along with rocks and soil of different denisites. The result is a 3D voxel grid of sensor readings along the vehicle's path, aproximately as wide as the vehicle itself and 2-3 meters deep. Once the map is built, it can later be used to localize the car with amazing accuracy even at highway speeds.</p>
+<p>A new sensor was developed at Lincoln Lab called "Localizing Ground Penetrating Radar". In essence, it is a radar array mounted to the underside of a vehicle. As the car drives, the radar maps out the road's subsurface features, capturing man-made objects such as pipes along with rocks and soil densities. The result is a 3D voxel grid of sensor readings along the vehicle's path, approximately as wide as the vehicle itself and 2-3 meters deep. Once the map is built, it can later be used to localize the car with amazing accuracy even at highway speeds.</p>
                 
-<p>While the lab had acheived excellent results in localization, the existing method depended on GPS for the initial fix and searched in a small radius based on the previous position combined with GPS and IMU extrapolation. My contribution was to develop an algorithm for doing localization in GPS-denied environments. In short, utilizing high-speed matrix operations I was able develop an algorithm to localize a series of ground scans across an entire map. I also demonstrated that my method could be run in realtime to achieve a unique fix within a few seconds of driving. I'm currently working on publishing a paper on this method.</p>
+<p>While the lab had achieved excellent results in localization, the existing method depended on GPS for the initial fix and searched in a small radius based on the previous position combined with GPS and IMU extrapolation. My contribution was to develop an algorithm for doing localization in GPS-denied environments. In short, utilizing high-speed matrix operations I was able develop an algorithm to localize a series of ground scans across an entire map. I also demonstrated that my method could be run in real-time to achieve a unique fix within a few seconds of driving. I'm currently working on publishing a paper on this method.</p>
