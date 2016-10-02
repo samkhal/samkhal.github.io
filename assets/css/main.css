@@ -2584,7 +2584,7 @@
 /* Project pages */
 .project img {
 	max-width: 100%;
-	max-height: 700px;
+	max-height: 500px;
 	width: initial;
 	margin: 0 auto 2em auto;
 	display: block;
