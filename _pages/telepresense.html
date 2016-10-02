@@ -7,9 +7,10 @@ subtitle: UMass Lowell Robotics Laboratory
 project-date: January-June, 2011
 order: 201101
 permalink: /projects/telepresense
-main-image: <img src="/images/atrv-jr.jpg" />
+main-image: <img src="/images/atrv-jr.jpg" alt="ATRV-Jr All-Terrain Robotics Platform"/>
 tags:
 - work
 ---
 <p>Working at UMass Lowell's robotics lab, I was involved in developing autonomous capability for several telepresence robots. Using the ATRV-Jr rover as a platform, I investigated ways to allow it to be used as a "smart" telepresence robot. If you're being represented at a location by a telepresence robot, you don't want to be focusing all of your attention on driving the robot; you want to be interacting with people naturally. One of the goals behind this work was to be able to walk alongside a telepresence robot, having a natural conversation with the person on the other end, while the robot handled driving alongside you autonomously. To do this, I integrated a vector field histogram navigation algorithm on the robot for obstacle avoidance while having it follow what it saw as a "target person". At first, this was done using the Hokuyo scanning LIDAR sensor on the front of the robot; the legs of the target were visible to the robot where they intersected the LIDAR beam. Later, a thermal camera on a pan-tilt mechanism was used to detect the target's heat signature, which was a more robust way to keep track of the target.</p>
 <p>Besides this main one, there were a couple of related projects I worked on. For the lab's VGo telepresence robot, I developed drivers to use the custom magnetic encoders on its wheels to get odometry for dead-reckoning navigation. I also created some logging utilities for use in the lab's experiments in trust between robots and their operators.</p>
+<img src="/images/vgo.jpg" alt="VGo Telepresense Robot"/>
