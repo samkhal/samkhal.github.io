@@ -10,6 +10,18 @@ main-image: <img src="/images/neato-thumb.png" alt="Neato robot vacuum" />
 tags:
 - personal
 ---
-<p>After discovering that Neato robot vacuum cleaners have fully functioning scanning LIDAR sensors and an available USB interface for getting all of that data, I wrote up some ROS drivers for it, hooked it up to some localization and mapping packages, and tweaked them for the robot's dimensions. Essentially, I've got a $200 <a href="http://turtlebot.com">TurtleBot</a>. Maybe its turning isn't <i>quite</i> as precise, but it also doesn't cost $2000.</p>
+<p>After discovering that Neato robot vacuum cleaners have fully functioning scanning LIDAR sensors and an available USB
+    interface for getting all of that data, I wrote up some ROS drivers for it, hooked it up to some localization and
+    mapping packages, and tweaked them for the robot's dimensions. Essentially, I've got a <a
+        href="http://turtlebot.com">TurtleBot</a>. Maybe its turning isn't <i>quite</i> as precise, but it also doesn't
+    cost $2000.</p>
 
-<p>Since a tethered robot isn't much fun, I hooked it up with Raspberry Pi and a battery in the dust-bin area to act as its brain, and used the Pi Camera for a live video feed. With this setup, I could access the Pi remotely over the internet from anywhere, give commands to drive the robot, and view the live video. Next steps could be: <ul><li>Hook up to Pi to the robot's internal battery, so that it could charge itself from the charging station</li><li>Make a web-interface for the remote connection</li><li>Give it some autonomy to patrol the house</li></ul></p>
+<p>Since a tethered robot isn't much fun, I hooked it up with Raspberry Pi and a battery in the dust-bin area to act as
+    its brain, and used the Pi Camera for a live video feed. With this setup, I could access the Pi remotely over the
+    internet from anywhere, give commands to drive the robot, and view the live video. Next steps could be:
+<ul class="default">
+    <li>Hook up to Pi to the robot's internal battery, so that it could charge itself from the charging station</li>
+    <li>Make a web-interface for the remote connection</li>
+    <li>Give it some autonomy to patrol the house</li>
+</ul>
+</p>

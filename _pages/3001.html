@@ -2,7 +2,7 @@
 layout: project
 title: Automated Production Line
 subtitle: WPI, Project for <i>Robot Manipulation</i>
-desc: 'A class project for "Unified Robotics: Manipulation". The task: program a robot arm to sort blocks on a conveyer belt.'
+desc: 'Project: program a robot arm to sort blocks on a conveyor belt'
 project-date: January-March, 2015
 order: 201501
 permalink: /projects/robotarm
@@ -10,6 +10,6 @@ main-image: <img src="/images/3001-render.JPG" alt="2-DOF robot arm" />
 tags:
 - academic
 ---
-<p>The arm is made of 3D-printed plastic and a couple of Pololu motors, with potentiometers and encoders for joint angle feedback and a standard gripper assembly for picking up blocks. The blocks are detected with a pair of IR sensors mounted near the conveyor belt; some inverse kinematics later and they're grabbed by the arm. Weighing is a simple matter of looking at the step response of the arm to a small voltage. Some more inverse kinematics and the arm drops the block in the appropriate area to sort them by weight.</p>
+<p>The arm is made of 3D-printed plastic and a couple of Pololu motors, with potentiometers and encoders for joint angle feedback and a standard gripper assembly for picking up blocks. The blocks move past the arm on a conveyor belt and are detected with a pair of IR sensors. The robot arm judges the block's speed, grabs it as it passes, and weighs it by looking at the arm's step-response for a predefined motion. Depending on the detected weight, the block is then sorted into different areas.</p>
                 
-<p>I also made a nice MATLAB interface for plotting data from the arm in real-time, drawing a live stick-model of the robot, and sending it commands to move the arm to a specified location with a click. The data is streamed back from the arm over a serial connection, and the robot simultaneously listens for incoming commands over the same line.</p><img src="/images/3001-arm-side.jpg" alt="2-DOF robot arm" class="p_img_detail" />
+<p>The robot autonomous motion was programmed in C++, with a MATLAB interface. The interface plotted data from the arm in real-time, drew a live stick-model of the robot, and allowed clicking locations in the workspace to command the robot arm to go there.</p><img src="/images/3001-arm-side.jpg" alt="2-DOF robot arm" class="p_img_detail" />

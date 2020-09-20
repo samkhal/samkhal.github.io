@@ -11,4 +11,24 @@ main-image: <img src="/images/CARL-thumb.jpg" alt="CARL robot grabbing cup" />
 tags:
 - academic
 ---
-<p>Building on research done by Andreas ten Pas and Rob Platt, I worked on identification of object handles and automatic grasping of objects. The robot <span class="define" title="Crowdsourced Autonomy and Robot Learning">CARL</span> was equipped with a 3-fingered 6-DOF JACO arm, which I used for the grasping tasks. Figuring out how to grasp an object is a difficult problem, and most existing solutions approach it in one of two ways: using a database of objects with precomputed grasps, or searching over the space of possible grasps for the given object geometry. Our approach was to simplify the problem to a search for cylinders only, making finding a feasible grasp much simpler. Most household objects are designed to be picked up by a cylindrical handle, or are themselves cylindrical, and cylindrical objects are relatively easy to grasp knowing only the position, orientation, and radius of the cylinder. Additionally, finding cylinders in a point cloud is a much simpler task than searching over all possible grasps. Thus, at a high level our grasping algorithm was as follows: <ul><li>Receive a pointcloud of the scene from the Kinect mounted on CARL</li><li> Identify all cylinders that match radius and height parameters</li><li> Group together close-by cylinders, representing each handle as a sequence of cylinders</li><li> Present the user with a list of identified handles</li><li>Calculate a trajectory to grasp the selected handle, based on the parameters of the cylinder closest to the handle's center</li></ul></p>
+<p>Building on research done by Andreas ten Pas and Rob Platt, I worked on identification of object handles and
+    automatic grasping of objects. The robot <span class="define"
+        title="Crowdsourced Autonomy and Robot Learning">CARL</span> was equipped with a 3-fingered 6-DOF JACO arm,
+    which I used for the grasping tasks. Figuring out how to grasp an object is a difficult problem, and most existing
+    solutions approach it in one of two ways: using a database of objects with precomputed grasps, or searching over the
+    space of possible grasps for the given object geometry. Our approach was to simplify the problem to a search for
+    cylinders and cylinder-like shapes designed for human grasping; once detected, forming a good grasp became a much
+    easier problem. Most household objects are designed to be picked up by
+    a cylindrical handle, or are themselves cylindrical, and cylindrical objects are relatively easy to grasp knowing
+    only the position, orientation, and radius of the cylinder. Additionally, finding cylinders in a point cloud is a
+    much simpler task than searching over all possible grasps. Thus, at a high level our grasping algorithm was as
+    follows:
+<ul class="default">
+    <li>Receive a pointcloud of the scene from the Kinect mounted on CARL</li>
+    <li> Identify all cylinders that match radius and height parameters</li>
+    <li> Group together close-by cylinders, representing each handle as a sequence of cylinders</li>
+    <li> Present the user with a list of identified handles</li>
+    <li>Calculate a trajectory to grasp the selected handle, based on the parameters of the cylinder closest to the
+        handle's center</li>
+</ul>
+</p>
